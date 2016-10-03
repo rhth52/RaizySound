@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Raizy Sound",
+    "description": "나른하고 게을러지고 싶은 날, 당신의 크롬 브라우저에서 빗소리를 재생시켜줍니다.",
+    "version": "1.0",
+    
+    "background":
+    {
+        "scripts":
+        [
+            "RaizySound.js"
+        ],
+        "persistent": false
+    },
+    "content_security_policy": "default-src",
+    "permissions": []
+}
