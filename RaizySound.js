@@ -1,23 +1,23 @@
-var myAudio = new Audio();
-myAudio.src = "sound.mp3";
+var MP3 = new Audio();
+MP3.src = "sound.mp3";
 
 var isPlaying = false;
 
 function playSound()
 {
-    myAudio.play();
+    MP3.play();
     isPlaying = true;
     chrome.browserAction.setBadgeText({text: "on"});
 }
 
 function pauseMP3()
 {
-    myAudio.pause();
+    MP3.pause();
     isPlaying = false;
     chrome.browserAction.setBadgeText({text: "off"});
 }
 
-myAudio.addEventListener('ended', function()
+MP3.addEventListener('ended', function()
 {
     this.currentTime = 0;
     playMP3();
